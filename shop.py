@@ -222,4 +222,4 @@ assert pay_prov1 == "Thank you. Your order has been received."
 # 10
 pay_prov = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//tfoot/tr[3]/td"))).text
 assert pay_prov == "Check Payments"
-
+driver.quit()
